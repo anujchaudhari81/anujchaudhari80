@@ -943,6 +943,32 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+/* Profile image */
+
+/* Container for the profile image */
+.profile-img-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 20px; /* Space between image and heading */
+}
+
+/* Styling for the profile image */
+.profile-img {
+    width: 150px; /* Set the size of the image */
+    height: 150px; /* Ensure the image is square */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Initial shadow */
+}
+
+/* Hover effect for the profile image */
+.profile-img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+/* Profile image */
 
 /* Image */
 
